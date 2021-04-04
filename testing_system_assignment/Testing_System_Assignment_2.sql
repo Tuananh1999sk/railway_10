@@ -116,8 +116,9 @@ DROP DATABASE IF EXISTS GroupAccount;
 		('Managemant',8,'2020-04-08'),
 		('Chat with love',9,'2020-04-09'),
 		('VI TI AI',10,'2020-04-10');
-        
-   INSERT INTO `GroupAccount`	(GroupID,AccountID,JoinDate)
+      
+	## them du lieu 
+   INSERT INTO `GroupAccount`	(GroupID,AccountID,JoinDate) VALUES
 				(1,		2	,'2019-03-05'		),
 				(1,		2	,'2020-03-07'		),
 				(3,		3	,'2020-03-09'		),
@@ -127,7 +128,7 @@ DROP DATABASE IF EXISTS GroupAccount;
 				(1,		7	,'2020-04-07'		),
 				(8,		3	,'2020-04-08'		),
 				(1,		9	,'2020-04-09'		),
-				(10,		10	,'2020-04-10'	),
+				(10,		10	,'2020-04-10'	);
                 
 		
 		
