@@ -1,9 +1,9 @@
--- DROP DATABASE IF EXISTS testing_system_assignment;
+DROP DATABASE IF EXISTS testing_system_assignment;
 CREATE DATABASE testing_system_assignment_2;
 USE testing_system_assignment_2;
 
 DROP DATABASE IF EXISTS  Department;
-CREATE TABLE Department(
+CREATE TABLE  Department(
 	DepartmentID 	 SMALLINT ,
 	DepartmentName 	VARCHAR(50)  
 ); 
@@ -92,16 +92,16 @@ DROP DATABASE IF EXISTS GroupAccount;
  
  INSERT INTO `Account`		(Email,FulName,DepartmentID,PositionID,CreateDate)
  VALUES
-		('haidang29productions@gmail.com','dangblack','5','1','2020-03-05'),
-		('Account1@gmail.com','quanganhh','1','2','2020-03-05'),
-		('Account2@gmail.com','vanchien','2','3','2020-03-07'),
-		('Account3@gmail.com','cocoduongqua','3','4','2020-03-08'),
-		('Account4@gmail.com','doccocaubai','4','4','2020-03-10'),
-		('Dapphatchetngay@gmail.com','khabanh','6','3','2020-04-05'),
-		('Songcodaoly@gmail.com','huanhoahong','7','2', '2020-05-09' ),
-		('sontungmtp@gmail.com','tungnui','8','1','2020-04-07'),
-		('duonghuu@gmail.com','duonghuu','9','2','2020-04-07'),
-		('Vtiaccady@gmail.com','Vtiaccady','10','1','2020-04-09');
+		('haidang29productions@gmail.com',		'dangblack',			'5',	'1',	'2020-03-05'),
+		('Account1@gmail.com',					'quanganhh',			'1',	'2',	'2020-03-05'),
+		('Account2@gmail.com',					'vanchien',				'2',	'3',	'2020-03-07'),
+		('Account3@gmail.com',					'cocoduongqua',			'3',	'4',	'2020-03-08'),
+		('Account4@gmail.com',					'doccocaubai',			'4',	'4',	'2020-03-10'),
+		('Dapphatchetngay@gmail.com',			'khabanh',				'6',	'3',	'2020-04-05'),
+		('Songcodaoly@gmail.com',				'huanhoahong',			'7',	'2', 	'2020-05-09' ),
+		('sontungmtp@gmail.com',				'tungnui',				'8',	'1',	'2020-04-07'),
+		('duonghuu@gmail.com',					'duonghuu',				'9',	'2',	'2020-04-07'),
+		('Vtiaccady@gmail.com',					'Vtiaccady',			'10',	'1',	'2020-04-09');
         
         
   INSERT INTO `Group`	(GroupID,CreatorID,CreateID)   
@@ -117,8 +117,12 @@ DROP DATABASE IF EXISTS GroupAccount;
 		('Chat with love',9,'2020-04-09'),
 		('VI TI AI',10,'2020-04-10');
       
+      
+      
+      
 	## them du lieu 
-   INSERT INTO `GroupAccount`	(GroupID,AccountID,JoinDate) VALUES
+   INSERT INTO `GroupAccount`	(GroupID,AccountID,JoinDate) 
+   VALUES
 				(1,		2	,'2019-03-05'		),
 				(1,		2	,'2020-03-07'		),
 				(3,		3	,'2020-03-09'		),
@@ -130,7 +134,40 @@ DROP DATABASE IF EXISTS GroupAccount;
 				(1,		9	,'2020-04-09'		),
 				(10,		10	,'2020-04-10'	);
                 
-		
+   INSERT INTO Typequestion		(Typname)  
+   VALUES
+				('Essay'),
+                ('Muntiple-choice');
+                
+   INSERT INTO Categoryquestion		(CategoryName) 
+   VALUES
+				('Java'),
+				('ASP.NET'),
+				('ADO.NET'),
+				('SQL'),
+				('Postman'),
+				('Ruby'),
+				('Python'),
+				('C++'),
+				('C Sharp'),
+				('PHP');
+     
+     INSERT INTO `department` (`DepartmentName`) VALUES 
+     ('Nguyen AAA'),
+     ('Nguyen CCC'),
+     ('Nguyen DDD'),
+     ('Nguyen FFF');
+     
+INSERT INTO `testing_system_assignment_2`.`department` (`DepartmentName`) VALUES ('Nguyen BBB');
+
+     
+SELECT  *
+FROM  Department;
+
+# SEL 
+SELECT *
+FROM Department
+WHERE DepartmentName = '%CCC';		
 		
         
 		
